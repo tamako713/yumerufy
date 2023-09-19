@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic');
+
+/* 夢ルフィ */
+
+header {
+    text-align: center;
+}
+
+.header {
+    background: url('20200212120008.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    width: 40rem;
+    height: 20rem;
+    display: inline-block;
+}
+
+.color {
+    background: rgba(255, 255, 255, 0.918);
+    margin-top: 7rem;
+    height: 5rem;
+    text-align: center;
+    width: 25rem;
+    display: inline-block;
+}
+
+h1 {
+    font-family: reggae-one, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.area {
+    width: 600px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tab_class {
+    width: calc(100%/3);
+    height: 50px;
+    background-color: rgb(220, 220, 220);
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: center;
+    order: -1;
+}
+
+input[name="tab_name"] {
+    display: none;
+}
+
+input:checked+.tab_class {
+    background-color: #eb5050;
+    color: aliceblue;
+}
+
+.content_class {
+    display: none;
+    width: 100%;
+}
+
+input:checked+.tab_class+.content_class {
+    display: block;
+}
+
+.見出し {
+    margin: 0 auto;
+    width: 550px;
+    padding: 1rem 2rem;
+    border-left: 5px solid #000;
+    background: #6ac9fc;
+    text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
+}
+
+main {
+    text-align: center;
+}
